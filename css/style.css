@@ -30,7 +30,7 @@ a{
   background: linear-gradient(
                      rgba(20,20,20, .5), 
                      rgba(20,20,20, .5)),
-                     url(/assets/images/hero.jpg);
+                     url(../assets/images/hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,7 @@ a{
       background: linear-gradient(
                      rgba(20,20,20, .5), 
                      rgba(20,20,20, .5)),
-                     url(/assets/images/dubai.jpg);
+                     url(../assets/images/dubai.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,7 +118,7 @@ a{
 .dubai0{
     grid-area: dubai0;
     height: 30em;
-    background-image: url(/assets/images/dubai.jpg);
+    background-image: url(../assets/images/dubai.jpg);
     background-position: center;
     background-size: cover;
 }
