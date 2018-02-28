@@ -1,0 +1,152 @@
+/* Body is for changing things for the whole website.  */
+body{
+    background-color: black;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+}
+/* a tag is for links. When we made dubai a link it had an underline. This removes the underline. */
+a{
+    text-decoration: none;
+}
+/* The grid is for the layout of our website. */
+.grid{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        
+        "section1 section1 section1 section1"
+        "section2 section2 section2 section2"
+        "section3 section3 section3 section3"
+        "section4 section4 section4 section4"
+        "section5 section5 section5 section5";
+}
+        
+/* Section one is the hero image, the code here makes the background darker and the writing lighter. */
+.section1{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(/assets/images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* This code changes the travel tips writing. */
+ #herotext{
+    font-size: 150px;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+/* This is where we are going to edit section 2 which is 'Dubai' */
+
+.section2{ 
+    grid-area: section2;
+    height: 20em;
+    background-color: pink;
+      background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(/assets/images/dubai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+#dubaitext{
+    font-size: 100px;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+}
+.section3{
+    grid-area: section3;
+    height: 20em;
+    background-color: olivedrab;
+}
+.section4{ 
+    grid-area: section4;
+    height: 20em;
+    background-color: blue;   
+}
+.section5{
+    grid-area: section5;
+    height: 20em;
+    background-color: black;
+}
+@media screen and (min-width: 736px) {
+    
+ 
+    .grid {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "section1 section1 section1 section1"
+        "section2 section2 section2 section2"
+        "section3 section3 section3 section3"
+        "section4 section4 section4 section4"
+        "section5 section5 section5 section5"
+    ;  
+    }
+}
+
+.grid2{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        
+        "dubai0 dubai0 dubai0 dubai0"
+         "dubai1 dubai2 dubai3 dubai4";
+}
+.dubai0{
+    grid-area: dubai0;
+    height: 30em;
+    background-image: url(/assets/images/dubai.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.dubai1{
+    grid-area: dubai1;
+    height: 20em;
+    background-color: purple;
+}
+
+.dubai2{
+    grid-area: dubai2;
+    height: 20em;
+    background-color: blue;
+}
+
+.dubai3{
+    grid-area: dubai3;
+    height: 20em;
+    background-color: green;
+}
+
+.dubai4{
+    grid-area: dubai4;
+    height: 20em;
+    background-color: pink;
+}
+iframe{
+    height: 100%;
+    width: 100%;
+}
+
